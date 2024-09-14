@@ -1,0 +1,16 @@
+/* Write your code here: */
+
+h1 {
+  color: rgb(45, 4, 84);
+}
+
+.done > pre {
+  color: rgb(51, 50, 50);
+}
+.list h2 {
+  color: rgb(3, 3, 94);
+}
+
+pre {
+  color: rgb(55, 51, 51);
+}

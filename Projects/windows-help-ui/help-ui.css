@@ -1,0 +1,50 @@
+html {
+  background-color: rgb(24, 24, 24);
+  color: white;
+  font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  padding: 0px 15%;
+}
+div {
+  margin: 5px 15px;
+}
+header {
+  background-color: black;
+}
+
+.blakk_hd1 {
+  display: inline-block;
+}
+
+.paragraph-div {
+  margin: auto;
+  background-color: rgba(33, 32, 32, 0.972);
+  padding: 15px;
+  text-align: left;
+}
+
+.rate-right {
+  text-align: right;
+}
+
+.run-paragraph {
+  background-color: rgb(55, 53, 53);
+  width: 220px;
+  height: 30px;
+  text-align: center;
+}
+
+/* --------------Media Query stylying -----------------*/
+
+@media (max-width: 700px) {
+  h1 {
+    /*font-size: 13px;*/
+  }
+}

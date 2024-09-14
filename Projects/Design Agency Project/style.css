@@ -1,0 +1,77 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+/* Understanding of this statement is crucial */
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: rgb(10, 10, 68);
+}
+
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 20px;
+}
+
+.creative {
+  color: rgb(11, 11, 130);
+}
+
+.card {
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+/*--------Styling for screens below 700px-----------*/
+@media (max-width: 700px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 30px;
+    display: block;
+    text-align: justify;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Combining CSS Selectors</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <!-- Don't change any of the HTML code! -->
+
+  <body>
+    <h1>Combining CSS Selectors</h1>
+    <p>
+      There are several ways of combing CSS selectors for styling our html
+      document
+    </p>
+    <ul class="list">
+      <li>
+        <h2>Way 1: Grouping</h2>
+        <div class="box">
+          <h4 class="done">An example is;</h4>
+          <pre>
+            h1, .className{ css styling goes herer} <br />
+            h1, h2 { css styling goes here}
+          </pre>
+        </li>
+
+        <li>
+          <h2>Way 2: Child</h2>
+          <div class="box">
+            <h4 class="done">An example is;</h4>
+            <pre>
+              h1 > className{ css styling goes herer} <br />
+              h1 > h2 { css styling goes here}
+            </pre>
+        </li>
+
+        <li>
+          <h2>Way 3: Desendant Selector</h2>
+          <div class="box">
+            <h4 class="done">An example is;</h4>
+            <pre>
+              selector Selector{ css styling goes herer} <br />
+              ancestor desendent { 
+                css styling goes here
+              }
+            </pre>
+        </li>
+
+        <li>
+          <h2>Way 4: Combining combiners</h2>
+          <div class="box">
+            <h4 class="done">An example is;</h4>
+            <pre>
+              selector Selector{ css styling goes herer} <br />
+              ancestor desendent { 
+                css styling goes here
+              }
+            </pre>
+        </li>
+
+        <li>
+          <h2>Way 5: Chaining Selectors</h2>
+          <div class="box">
+            <h4 class="done">An example is;</h4>
+            <pre>
+              selectorSelector{ css styling goes herer} <br />
+              h1.box#idName { 
+                css styling goes here
+              }
+            </pre>
+        </li>
+    </ul>
+    <p>The best preparation for tomorrow is doing your best today.</p>
+  </body>
+</html>
