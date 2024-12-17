@@ -5,7 +5,6 @@ Covers the absolute basics of HTML, to get you started — we define elements, a
 #### Anatomy of an HTML element
 
 <p>My cat is <strong>very</strong> grumpy.</p>
-
 Let's further explore our paragraph element from the previous section:
 
 ## Attributes
