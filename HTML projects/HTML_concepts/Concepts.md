@@ -19,3 +19,11 @@ An attribute should have:
 - An attribute value, wrapped with opening and closing quote marks.
 
 ## Terms
+
+## Concepts
+
+### Embedding <video> elements
+
+The video element usually contains the following structures:
+
+eg;
