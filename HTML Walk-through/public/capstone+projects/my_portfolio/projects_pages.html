@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio Website</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my Website</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About Me</li>
+        <li>Contact Me</li>
+        <li>Projects</li>
+      </ul>
+    </nav>
+
+    <main>
+      <p>This is my website content</p>
+
+      <h2>Concepts 1 - Drawing with Canvas</h2>
+      <canvas id="myCanvas" width="500" height="500"></canvas>
+
+      <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.beginPath();
+        ctx.rect(20, 20, 150, 100);
+        ctx.fillStyle = "#f0f";
+        ctx.fill();
+        ctx.stroke();
+      </script>
+
+      <p>Concept on Contact Forms</p>
+      <form action="/submit-contact" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+
+      <h2>Concept on Tables</h2>
+      <table>
+        <tr>
+          <td>Row 1, cell 1</td>
+          <td>Row 1, cell 2</td>
+          <td>Row 1, cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 2, cell 1</td>
+          <td>Row 2, cell 2</td>
+          <td>Row 2, cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 3, cell 1</td>
+          <td>Row 3, cell 2</td>
+          <td>Row 3, cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 4, cell 1</td>
+          <td>Row 4, cell 2</td>
+          <td>Row 4, cell 3</td>
+        </tr>
+      </table>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 All Rights Reservrd</p>
+    </footer>
+  </body>
+</html>

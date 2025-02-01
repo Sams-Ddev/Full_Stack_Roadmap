@@ -1,0 +1,38 @@
+* {
+  background-color: aliceblue;
+  text-align: center;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}
+
+.blue_cat {
+  color: blue;
+}
+
+.green_cat {
+  color: green;
+}
+
+.orange_cat {
+  color: orange;
+}
+
+.yellow_cat {
+  color: yellow;
+}
+
+.red_cat {
+  color: red;
+}
+
+#footerParagraph {
+  font-family: "Courier New", Courier, monospace;
+}

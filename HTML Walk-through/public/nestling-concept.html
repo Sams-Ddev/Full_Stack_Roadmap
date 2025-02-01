@@ -1,0 +1,186 @@
+<!-- This tutorials touches on nesting and indentastion of code -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nesting Concept</title>
+  </head>
+  <body>
+    <ol>
+      <li><h1>An Informal Introduction to Python</h1></li>
+      <p>
+        In the following examples, input and output are distinguished by the
+        presence or absence of prompts <b>(>>> and …):</b> to repeat the
+        example, you must type everything after the prompt, when the prompt
+        appears; lines that do not begin with a prompt are output from the
+        interpreter. Note that a secondary prompt on a line by itself in an
+        example means you must type a blank line; this is used to end a
+        multi-line command.
+      </p>
+      <p>
+        You can toggle the display of prompts and output by clicking on >>> in
+        the upper-right corner of an example box. If you hide the prompts and
+        output for an example, then you can easily copy and paste the input
+        lines into your interpreter.
+      </p>
+      <p>Some examples;</p>
+
+      <pre>
+        # this is the first comment<br />
+        spam = 1 # and this is the second comment<br />
+        # ... and now a third! <br />
+        text = "# This is not a comment because it's inside quotes."
+      </pre>
+
+      <li>
+        <h2>1.1. Using Python as a Calculator</h2>
+        <p>
+          Let’s try some simple Python commands. Start the interpreter and wait
+          for the primary prompt, >>>. (It shouldn’t take long.)
+        </p>
+        <ol>
+          <li><h3>1.1.1 Numbers</h3></li>
+          <p>
+            The interpreter acts as a simple calculator: you can type an
+            expression at it and it will write the value. Expression syntax is
+            straightforward: the operators +, -, * and / can be used to perform
+            arithmetic; parentheses (()) can be used for grouping. For example:
+          </p>
+          <pre>
+            <b>>>></b> 2 + 2
+            4
+            <b>>>></b> 50 - 5*6
+            20
+            <b>>>></b> (50 - 5*6) / 4
+            5.0
+            <b>>>></b> 8 / 5  # division always returns a floating point number
+            1.6
+          </pre>
+          <li>
+            <h3>1.1.2. Text</h3>
+            <p>
+              Python can manipulate text (represented by type str, so-called
+              “strings”) as well as numbers. This includes characters “!”, words
+              “rabbit”, names “Paris”, sentences “Got your back.”, etc. “Yay!
+              :)”. They can be enclosed in single quotes ('...') or double
+              quotes ("...") with the same result [2].
+            </p>
+            <pre>
+              <b>>>></b> 'spam eggs'  # single quotes
+              'spam eggs'
+              <b>>>></b> "Paris rabbit got your back :)! Yay!"  # double quotes
+              'Paris rabbit got your back :)! Yay!'
+              <b>>>></b> '1975'  # digits and numerals enclosed in quotes are also strings
+              '1975'
+            </pre>
+            <ul>
+              <li>
+                <h4>String Indexing</h4>
+                <p>
+                  Strings can be indexed (subscripted), with the first character
+                  having index 0. There is no separate character type; a
+                  character is simply a string of size one:
+                </p>
+                <pre>
+                  <b>>>></b> word = 'Python'
+                  <b>>>></b> word[0]  # character in position 0
+                  'P'
+                  <b>>>></b> word[5]  # character in position 5
+                  'n'
+                </pre>
+                <p>
+                  Indices may also be negative numbers, to start counting from
+                  the right:
+                </p>
+                <p>
+                  One way to remember how slices work is to think of the indices
+                  as pointing between characters, with the left edge of the
+                  first character numbered 0. Then the right edge of the last
+                  character of a string of n characters has index n, for
+                  example:
+                </p>
+                <pre>
+                  +---+---+---+---+---+---+
+                  | P | y | t | h | o | n |
+                  +---+---+---+---+---+---+
+                  0   1   2   3   4   5   6
+                 -6  -5  -4  -3  -2  -1
+                </pre>
+                <p>
+                  The first row of numbers gives the position of the indices 0…6
+                  in the string; the second row gives the corresponding negative
+                  indices. The slice from i to j consists of all characters
+                  between the edges labeled i and j, respectively.
+                </p>
+                <p>
+                  For non-negative indices, the length of a slice is the
+                  difference of the indices, if both are within bounds. For
+                  example, the length of word[1:3] is 2.
+                </p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                B2a
+                <ul>
+                  <li>B2aa</li>
+                  <li>B2ab</li>
+                </ul>
+              </li>
+              <li>B2b</li>
+              <li>B2c</li>
+            </ul>
+          </li>
+          <li>
+            <h3>3.1.3. Lists</h3>
+            <p>
+              Python knows a number of compound data types, used to group
+              together other values. The most versatile is the list, which can
+              be written as a list of comma-separated values (items) between
+              square brackets. Lists might contain items of different types, but
+              usually the items all have the same type.
+            </p>
+            <pre>
+              <b>>>></b> squares = [1, 4, 9, 16, 25]
+              <b>>>></b> squares
+              [1, 4, 9, 16, 25]
+            </pre>
+            <p>
+              Like strings (and all other built-in sequence types), lists can be
+              indexed and sliced:
+            </p>
+            <ol>
+              <li>B3.1</li>
+              <li>B3.2</li>
+            </ol>
+          </li>
+          <li><h3>3.1.3. Lists</h3></li>
+        </ol>
+      </li>
+      <li><h2>3.2. First Steps Towards Programming</h2></li>
+      <p>
+        Of course, we can use Python for more complicated tasks than adding two
+        and two together. For instance, we can write an initial sub-sequence of
+        the Fibonacci series as follows:
+      </p>
+      <pre>
+        <b>>>></b># Fibonacci series:
+        <b...</b> # the sum of two elements defines the next
+        <b...</b> a, b = 0, 1
+        <b>>>></b> while a < 10:
+        <b>...</b>   print(a)
+        <b>...</b>   a, b = b, a+b
+        <b>...</b>
+        0
+        1
+        1
+        2
+        3
+        5
+        8
+      </pre>
+    </ol>
+  </body>
+</html>
