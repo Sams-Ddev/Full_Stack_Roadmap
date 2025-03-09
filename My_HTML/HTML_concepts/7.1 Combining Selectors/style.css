@@ -13,3 +13,8 @@ h2 {
 .box li {
 	color: blue;
 }
+
+/* chaining selectors - Apply where the All selectors is true */
+li.done {
+	color: seagreen;
+}
