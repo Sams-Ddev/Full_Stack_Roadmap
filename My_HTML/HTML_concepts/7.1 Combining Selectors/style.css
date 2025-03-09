@@ -1,1 +1,5 @@
 /* Write your code here: */
+hr {
+	width: 60%;
+	align-content: start;
+}
