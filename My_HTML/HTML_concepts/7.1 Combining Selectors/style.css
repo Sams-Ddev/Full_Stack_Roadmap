@@ -1,5 +1,5 @@
 /* Write your code here: */
-hr {
-	width: 60%;
-	align-content: start;
+h1,
+h2 {
+	color: blue;
 }
