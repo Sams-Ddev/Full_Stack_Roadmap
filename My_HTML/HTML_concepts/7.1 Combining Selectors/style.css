@@ -1,5 +1,15 @@
-/* Write your code here: */
+/* Group selectors - selector1,selector2 */
 h1,
 h2 {
+	color: blue;
+}
+
+/* Child selector - parenet_selector > child_selector  */
+.box > .done {
+	color: firebrick;
+}
+
+/* Decendant selelctors - selector space selector*/
+.box li {
 	color: blue;
 }
