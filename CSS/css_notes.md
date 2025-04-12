@@ -34,7 +34,7 @@ background-color: black;
 
 # -4. Chaining Selectors:
 
-This rule apply css rules anywhere all the selectors are true.
+This rule apply css rules anywhere all the selectors are true. Always start with the elements first eg: li#ID.class {...}
 
 example: (code here)
 
@@ -44,4 +44,10 @@ property:value;
 eg :
 h1#title.big.heading{
 color:red;
+}
+
+# -5. Combining Combinators:
+
+selector selectorselector{
+font-size:0.5rem;
 }
