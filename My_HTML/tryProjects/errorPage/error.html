@@ -17,6 +17,11 @@
 				background-color: rgb(176, 247, 247);
 			}
 
+			.indivBtn {
+				width: 160px;
+				height: 35px;
+			}
+
 			nav {
 				display: flex;
 				align-items: center;
@@ -24,8 +29,32 @@
 				padding: 10px 20px;
 			}
 
+			.circle {
+				background-color: rgb(176, 247, 247);
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+			}
+
+			code {
+				font-family: "Courier New", Courier, monospace;
+				font-size: medium;
+			}
 			.code {
 				color: chocolate;
+			}
+
+			.circlecontainers {
+				display: flex;
+				gap: 9px;
+				padding: 0px 5px;
+				align-content: center;
+			}
+
+			side {
+				display: flex;
+				gap: 8px;
+				flex-direction: column;
 			}
 		</style>
 	</head>
@@ -43,11 +72,18 @@
 			<div class="innerBox">
 				<pre>
         <code> <span class="code">#titanic</span> { 
-          float : none; 
+          float : <span class="code">none;</span> 
         } </code>
       </pre>
-				<button class="indivBtn">Buy Merch</button>
-				<div class="socialIcons"></div>
+				<side>
+					<button class="indivBtn">Buy Merch</button>
+					<div class="circlecontainers">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+					</div>
+				</side>
 			</div>
 		</section>
 	</body>
