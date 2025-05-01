@@ -6,8 +6,16 @@
 		<title>Error Page</title>
 		<style>
 			body {
-				align-items: center;
+				width: 100%;
+				min-height: 100%;
+				text-align: center;
 				background-color: #3267ff;
+				color: aliceblue;
+				margin-left: auto;
+				margin-right: auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
 			}
 
 			button {
@@ -20,6 +28,9 @@
 			.indivBtn {
 				width: 160px;
 				height: 35px;
+				background-color: #3267ff;
+				color: white;
+				border-color: #4b7afb;
 			}
 
 			nav {
@@ -29,8 +40,15 @@
 				padding: 10px 20px;
 			}
 
+			.heroImg {
+				border-color: rgb(156, 138, 84);
+				width: 300px;
+				height: 300px;
+				border-radius: 50%;
+			}
+
 			.circle {
-				background-color: rgb(176, 247, 247);
+				background-color: #3267ff;
 				width: 30px;
 				height: 30px;
 				border-radius: 50%;
@@ -38,7 +56,7 @@
 
 			code {
 				font-family: "Courier New", Courier, monospace;
-				font-size: medium;
+				font-weight: 600;
 			}
 			.code {
 				color: chocolate;
@@ -55,6 +73,27 @@
 				display: flex;
 				gap: 8px;
 				flex-direction: column;
+				padding-right: 40px;
+			}
+
+			.innerBox {
+				background-color: rgba(12, 11, 11, 0.362);
+				display: flex;
+				justify-content: space-between;
+				width: 60vw;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 50px 30px;
+				border-radius: 6px;
+				align-items: center;
+			}
+
+			.bottom {
+				position: fixed;
+				bottom: 20px;
+				left: 30%;
+				font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+					"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 			}
 		</style>
 	</head>
@@ -69,6 +108,7 @@
 				/>
 				<button>Notify me</button>
 			</nav>
+			<div class="div heroImg"></div>
 			<div class="innerBox">
 				<pre>
         <code> <span class="code">#titanic</span> { 
@@ -86,5 +126,8 @@
 				</side>
 			</div>
 		</section>
+		<p class="bottom">
+			Our tryProjects: ✔ E-commence ❄ Snowflakes ☦Church Management Platforms
+		</p>
 	</body>
 </html>
