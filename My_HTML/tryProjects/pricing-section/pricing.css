@@ -1,2 +1,9 @@
 body {
 }
+
+button {
+	padding: 10px 30px;
+	border: 1px solid;
+	border-radius: 30px;
+	background-color: lightseagreen;
+}
