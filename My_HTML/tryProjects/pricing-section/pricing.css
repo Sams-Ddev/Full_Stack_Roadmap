@@ -39,7 +39,19 @@ hr {
 }
 
 .price_heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: blue;
-	padding: 20px 30px;
-	border-radius: 20px 20px 5px 5px;
+	padding: 15px 20px;
+	border-radius: 30px 30px 3px 3px;
+}
+
+.description {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 10px;
+}
+
+/* rESPOPNSIVENES */
+@media {
 }
