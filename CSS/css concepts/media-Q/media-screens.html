@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screen Breakpoints</title>
+
+    <!-- 
+      TODO: Change the background color for each device
+      Styling TODOs
+    -->
+
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+
+      /*--changing screen color for different screen breakpoints---*/
+      @media (min-width: 319px) and (max-width: "480px") {
+        body {
+          background-color: lightsalmon;
+        }
+      }
+
+      /* iPads and Tablets: 481px — 1200px  */
+      @media (min-width: 481px) and (max-width: 1200px) {
+        body {
+          background-color: powderblue;
+        }
+      }
+
+      /*--Desktops: 1601px and more--*/
+      @media (min-width: 1601px) {
+        body {
+          background-color: blueviolet;
+        }
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
